@@ -1,7 +1,8 @@
 import java.util.NoSuchElementException
+import scala.annotation.tailrec
 
 object P01 {
-    def last[A](list: List[A]): A =
+    @tailrec def last[A](list: List[A]): A =
         list match {
             case one :: Nil => one
             case _ :: next => last(next)

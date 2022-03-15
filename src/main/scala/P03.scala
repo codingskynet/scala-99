@@ -1,5 +1,7 @@
+import scala.annotation.tailrec
+
 object P03 {
-    def nth[A](idx: Int, list: List[A]): A =
+    @tailrec def nth[A](idx: Int, list: List[A]): A =
         list match {
             case head :: next =>
                 if (idx == 0) {

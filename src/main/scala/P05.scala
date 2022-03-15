@@ -7,6 +7,6 @@ object P05 {
             case Nil => Nil
         }
 
-    def reverse_fast[A](list: List[A]): List[A] =
+    def reverseFast[A](list: List[A]): List[A] =
         list.foldLeft(List[A]())((a, b) => b :: a)
 }

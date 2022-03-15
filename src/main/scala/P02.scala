@@ -1,5 +1,7 @@
+import scala.annotation.tailrec
+
 object P02 {
-    def penultimate[A](list: List[A]): A =
+    @tailrec def penultimate[A](list: List[A]): A =
         list match {
             case one :: _ :: Nil => one
             case _ :: next => penultimate(next)
