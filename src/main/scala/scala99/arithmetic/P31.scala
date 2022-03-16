@@ -1,4 +1,4 @@
-package scala99
+package scala99.arithmetic
 
 object P31 {
     def isPrime(num: Int): Boolean = {
