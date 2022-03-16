@@ -18,5 +18,5 @@ object P08 {
     }
 
     def functionalCompress[A](list: List[A]): List[A] =
-        list.foldRight(List[A]())( (a, b) => if (b.isEmpty || a != b.head) a :: b else b)
+        list.foldRight(List[A]())((a, b) => if (b.isEmpty || a != b.head) a :: b else b)
 }
